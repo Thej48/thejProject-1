@@ -1,0 +1,96 @@
+body{
+    background: linear-gradient(65deg, #f70808, #f0632c);
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+.container{
+    width:55%;
+    height: 70%;
+    background:paleturquoise;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px  #000000;
+    display: flex;
+}
+.left-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-container > img{
+    width: 70%;
+}
+.right-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+.hed{
+    color: orangered;
+}
+.login-frm{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.input{
+    padding: 12px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 5px #0000001a;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.login-btn{
+    padding: 12px;
+    background-color: orangered;
+    border:none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: 1px 1px 5px #0000001a;
+}
+.login-btn:hover{
+    background: white;
+    color: tomato;
+    border:1px solid orangered;
+    transition-duration: 0.5s;
+}
+@media only screen and (max-width: 800px){
+    body{
+        background: paleturquoise;
+    }
+}
+@media only screen and (max-width: 600px){
+    body{
+        background: paleturquoise;
+    }
+    .container{
+        width: 75%;
+        height: 70%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-container{
+        width: 100%;
+    }
+    .left-container > img{
+        width: 40%;
+    }
+    .right-container{
+        width: 100%;
+    }
+}
+
+
+
